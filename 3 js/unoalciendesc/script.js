@@ -1,6 +1,6 @@
-let descendingNumbers = [];
+let numdesc = [];
 for (let i = 100; i >= 0; i--) {
-  descendingNumbers.push(i);
+    numdesc.push(i);
 }
 
-document.getElementById("num-desc").innerHTML = descendingNumbers.join(", ");
+document.getElementById("num-desc").innerHTML = numdesc.join(", ");

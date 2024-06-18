@@ -1,4 +1,4 @@
-function isPrime(n) {
+function Esprimo(n) {
     if (n <= 1) return false;
     for (let i = 2; i * i <= n; i++) {
       if (n % i === 0) return false;
@@ -6,9 +6,9 @@ function isPrime(n) {
     return true;
   }
   
-  let primeNumbers = [];
+  let primonum = [];
   for (let i = 2; i <= 100; i++) {
-    if (isPrime(i)) primeNumbers.push(i);
+    if (Esprimo(i)) primonum.push(i);
   }
   
-  document.getElementById("prime-numbers").innerHTML = primeNumbers.join(", ");
+  document.getElementById("primos-num").innerHTML = primonum.join(", ");
